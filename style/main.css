@@ -1,0 +1,175 @@
+
+
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elemento base*/
+
+body{
+    background: var(--preta);
+    font-size: 'Arial';
+    color: white;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+
+    cursor: pointer;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    margin-right: 50px;
+    font-size: 20px;
+    padding: center;
+    cursor: pointer;
+    font-family: 'Arial';
+
+}
+
+header nav a:hover{
+    color: rgb(105, 105, 105);
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 20px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/PeakyBlinders.png');
+
+    height: 60%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+   margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+
+.titulo {
+    margin-top: 30%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS';
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 15px 40px;
+    margin-right: 15px;
+    font-size: 15px;
+    
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+/*Perfil user*/
+
+.perfil{
+    width: 80px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position:relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: var(--vermelho);} 
