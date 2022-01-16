@@ -10,11 +10,22 @@
         height: 60px;
     }
 
+}
 
+@media screen and (max-width:1000px) {
+    header .logo, .dropdown {
+        position: relative !important;
+    }
+
+    header .container {
+        padding: 0;
+    }
 }
 
 @media screen and (min-width:1000px) {
+
     .decricao{
         width: 50%;
     }
+
 }
